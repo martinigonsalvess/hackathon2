@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { IDropdownOption, IDropdownStyles } from 'office-ui-fabric-react/lib/Dropdown';
 import{ DropdownCT } from './DropdownMenu/DropdownCT';
 import { CreateTaskBtn } from './Buttons/CreateTaskBtn';
 import { SingleTask } from './SingleTask';
@@ -36,15 +35,7 @@ const dropStyles: React.CSSProperties = {
 const stackTokens: IStackTokens = { childrenGap: 5 };
 //.....
 
-  export const CreateTask = () => {
-  const [selectedKeys, setSelectedKeys] = React.useState<string[]>([]);
-  // const onChange = (event: React.FormEvent<HTMLDivElement>, item: IDropdownOption): void => {
-  //   if (item) {
-  //     setSelectedKeys(
-  //       item.selected ? [...selectedKeys, item.key as string] : selectedKeys.filter(key => key !== item.key),
-  //     );
-  //   }
-  // };
+  export const CreateTask = () => { 
 
   return (
     <>

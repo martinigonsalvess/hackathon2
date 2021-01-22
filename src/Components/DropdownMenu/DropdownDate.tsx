@@ -42,7 +42,7 @@ const controlClass = mergeStyleSets({
 });
 
 export const DropdownDate: React.FC = () => {
-  const [firstDayOfWeek, setFirstDayOfWeek] = React.useState(DayOfWeek.Sunday);
+  const [firstDayOfWeek] = React.useState(DayOfWeek.Sunday);
 
  return (
     <div style={{display:'flex', flexDirection:'column'}}>
