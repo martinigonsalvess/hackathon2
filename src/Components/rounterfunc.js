@@ -4,7 +4,6 @@ import {
     HashRouter
 } from "react-router-dom";
 import NavBar1 from "./Navbar";
-import TestTask from "./TestTask";
 import TestContact from "./TestContact";
 import TestHome from "./TestHome";
 

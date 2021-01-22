@@ -48,12 +48,7 @@ const classNames = mergeStyleSets({
     marginBottom: '20px',
   },
 });
-const controlStyles = {
-  root: {
-    margin: '0px 30px 20px 0',
-    maxWidth: '500px',
-  },
-};
+
 
 export interface IDetailsListDocumentsExampleState {
   columns: IColumn[];

@@ -4,27 +4,9 @@ import { DropdownDate } from './DropdownMenu/DropdownDate'
 import { DropdownCT } from './DropdownMenu/DropdownCT';
 import { SaveBtn } from './Buttons/SaveBtn';
 
-import { Stack, IStackStyles, IStackTokens } from 'office-ui-fabric-react/lib/Stack';
+import { Stack} from 'office-ui-fabric-react/lib/Stack';
 
-const textStyles: React.CSSProperties = {
-    alignItems: 'center',
-    display: 'flex',
-    height: 50,
-    justifyContent: 'center',
-    width: 200,
-    padding: 50,
-  };
-  const dropStyles: React.CSSProperties = {
-    alignItems: 'center',
-    display: 'flex',
-    flexDirection: 'column',
-    height: 50,
-    justifyContent: 'center',
-    width: 50,
-    paddingTop: 50,
-    paddingBottom: 50,
-    
-  };
+ 
 export const AddTask = () => {
 
     return (

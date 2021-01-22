@@ -5,7 +5,6 @@ import axios from 'axios';
 
 
 function RecordTime() {
-    const[total, setTotal] = useState()
     const [data, setData] = useState({
         descrpition: "",
         file: "",

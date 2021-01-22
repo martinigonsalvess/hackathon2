@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Dropdown, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
 import { DatePicker, DayOfWeek, IDatePickerStrings, mergeStyleSets } from 'office-ui-fabric-react';
 import { Label } from 'office-ui-fabric-react/lib/Label';
 
@@ -45,11 +44,7 @@ const controlClass = mergeStyleSets({
 export const DropdownDate: React.FC = () => {
   const [firstDayOfWeek, setFirstDayOfWeek] = React.useState(DayOfWeek.Sunday);
 
-  const onDropdownChange = (event: React.FormEvent<HTMLDivElement>, option: IDropdownOption) => {
-    setFirstDayOfWeek((DayOfWeek as any)[option.key]);
-  };
-
-  return (
+ return (
     <div style={{display:'flex', flexDirection:'column'}}>
         <Label>Date</Label> 
         <DatePicker

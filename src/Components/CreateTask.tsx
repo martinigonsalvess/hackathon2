@@ -36,17 +36,15 @@ const dropStyles: React.CSSProperties = {
 const stackTokens: IStackTokens = { childrenGap: 5 };
 //.....
 
-const dropdownStyles: Partial<IDropdownStyles> = { dropdown: { width: 100 } };
-
   export const CreateTask = () => {
   const [selectedKeys, setSelectedKeys] = React.useState<string[]>([]);
-  const onChange = (event: React.FormEvent<HTMLDivElement>, item: IDropdownOption): void => {
-    if (item) {
-      setSelectedKeys(
-        item.selected ? [...selectedKeys, item.key as string] : selectedKeys.filter(key => key !== item.key),
-      );
-    }
-  };
+  // const onChange = (event: React.FormEvent<HTMLDivElement>, item: IDropdownOption): void => {
+  //   if (item) {
+  //     setSelectedKeys(
+  //       item.selected ? [...selectedKeys, item.key as string] : selectedKeys.filter(key => key !== item.key),
+  //     );
+  //   }
+  // };
 
   return (
     <>
